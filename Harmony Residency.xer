@@ -1,0 +1,486 @@
+ERMHDR	24.12	2025-12-21	Project	ADMIN	 khushi	dbxDatabaseNoName	Project Management	INR
+%T	CURRTYPE
+%F	curr_id	decimal_digit_cnt	curr_symbol	decimal_symbol	digit_group_symbol	pos_curr_fmt_type	neg_curr_fmt_type	curr_type	curr_short_name	group_digit_cnt	base_exch_rate
+%R	1	2	$	.	,	#1.1	(#1.1)	US Dollar	USD	3	1
+%R	13	2	£	.	,	#1.1	(#1.1)	Pound Sterling	GBP	3	0.618603
+%R	14	2	¥	.	,	#1.1	(#1.1)	Japanese Yen	JPY	3	91.2708
+%R	15	2	€	.	,	#1.1	(#1.1)	Euro	EUR	3	0.689711
+%R	16	2	¥	.	,	#1.1	(#1.1)	Chinese Yuan Renminbi	CNY	3	6.82502
+%R	17	2	$	.	,	#1.1	(#1.1)	Canadian Dollar	CAD	3	1.03757
+%R	18	2	RUB	.	,	#1.1	(#1.1)	Russian Ruble	RUB	3	0.033948
+%R	19	2	$	.	,	#1.1	(#1.1)	Argentine Peso	ARS	3	3.79109
+%R	20	2	$b	.	,	#1.1	(#1.1)	Bolivian Boliviano	BOB	3	7.5708
+%R	21	2	R$	.	,	#1.1	(#1.1)	Brazilian Real	BRL	3	1.7665
+%R	22	2	$	.	,	#1.1	(#1.1)	Chilean Peso	CLP	3	507.58
+%R	23	2	$	.	,	#1.1	(#1.1)	Columbian Peso	COP	3	1957.74
+%R	24	2	$	.	,	#1.1	(#1.1)	Guyanese Dollar	GYD	3	202.95
+%R	25	2	Gs	.	,	#1.1	(#1.1)	Paraguayan Guarani	PYG	3	4640
+%R	26	2	S/.	.	,	#1.1	(#1.1)	Peruvian Nuevo Sol	PEN	3	2.7244
+%R	27	2	$	.	,	#1.1	(#1.1)	Surinamese Dollar	SRD	3	2.8
+%R	28	2	Bs	.	,	#1.1	(#1.1)	Venezuelan Bolivar Fuerto	VEF	3	2.1446
+%R	29	2	$U	.	,	#1.1	(#1.1)	Uruguayan Peso	UYU	3	21.247
+%R	30	2	?	.	,	#1.1	(#1.1)	Indian Rupees	INR	3	88.64
+%T	FINTMPL
+%F	fintmpl_id	fintmpl_name	default_flag
+%R	1	Calendar	Y
+%T	OBS
+%F	obs_id	parent_obs_id	guid	seq_num	obs_name	obs_descr
+%R	540			0	VIM	<html>  <head>      </head>  <body bgcolor=""#ffffff"">    Enterprise  </body></html>
+%R	1490	540	sAnBqBl0pk6zbQCAguygVg	1	General Manager - R.K Sharma	
+%R	1492	1490	cLR0KYYBO0mKXdWdYza44w	0	Project Manager - A. Singh	
+%T	ROLES
+%F	role_id	parent_role_id	seq_num	role_name	role_short_name	pobs_id	def_cost_qty_link_flag	cost_qty_type	role_descr	last_checksum
+%R	1569		0	Harmony Residency	BLD-HR.R-ORG		Y	QT_Hour		
+%R	1570	1572	0	Project Manager	PM		Y	QT_Hour		
+%R	1571	1572	1	Planning Engineer	PLN		Y	QT_Hour		
+%R	1572	1569	100	Management Roles	R-MG		Y	QT_Hour		
+%R	1573	1572	101	Quantity Surveyor	QS		Y	QT_Hour		
+%R	1574	1572	201	Safety Officer	SC		Y	QT_Hour		
+%R	1575	1572	301	QA/QC Engineer	QC		Y	QT_Hour		
+%R	1576	1572	401	Site Manager	SM		Y	QT_Hour		
+%R	1578	1569	200	Site Engineering Roles	R-SE		Y	QT_Hour		
+%R	1579	1578	0	Civil Site Engineer	CIV		Y	QT_Hour		
+%R	1581	1578	200	Finishing Engineer	FIN		Y	QT_Hour		
+%R	1582	1578	300	Surveyor	SUR		Y	QT_Hour		
+%R	1583	1578	400	Electrical Engineer (MEP)	ELC		Y	QT_Hour		
+%R	1584	1578	500	Plumbing Engineer(MEP)	PLB		Y	QT_Hour		
+%R	1585	1569	300	Supervision Roles	R-SP		Y	QT_Hour		
+%R	1586	1585	0	Carpentry Supervisor	CARP		Y	QT_Hour		
+%R	1587	1585	100	Reinforcement Supervisor	RF		Y	QT_Hour		
+%R	1588	1585	200	Masonry Supervisor	MSN		Y	QT_Hour		
+%R	1589	1585	300	Concrete Supervisor	CNC		Y	QT_Hour		
+%R	1590	1585	400	Finishing Supervisor	FIN		Y	QT_Hour		
+%R	1591	1585	500	Electrical Supervisor	ELC		Y	QT_Hour		
+%R	1592	1585	600	Plumbing Supervisor	PLB		Y	QT_Hour		
+%R	1593	1569	400	Skilled Labour Roles	R-SL		Y	QT_Hour		
+%R	1594	1593	0	Mason	MSN		Y	QT_Hour		
+%R	1595	1593	100	Helper/General Labour	HLP		Y	QT_Hour		
+%R	1596	1593	200	Bar Bender	BRB		Y	QT_Hour		
+%R	1597	1593	300	Carpenter	CARP		Y	QT_Hour		
+%R	1598	1593	400	Electrician	ELC		Y	QT_Hour		
+%R	1599	1593	500	Plumber	PLB		Y	QT_Hour		
+%R	1600	1593	600	Painter / Putty worker	PTR		Y	QT_Hour		
+%R	1601	1593	700	Tile Mason	TLS		Y	QT_Hour		
+%R	1602	1569	500	Equipment & Operators	R-EQ		Y	QT_Hour		
+%R	1603	1602	0	JCB Operator	JCB		Y	QT_Hour		
+%R	1604	1602	100	Excavator Operator	EXV		Y	QT_Hour		
+%R	1605	1602	200	Vibrator Operator	VIB		Y	QT_Hour		
+%R	1606	1602	300	Compactor Operator	CMP		Y	QT_Hour		
+%R	1607	1602	400	Concrete Mixer Operator	MIX		Y	QT_Hour		
+%R	1608	1602	500	Crane Operator	CRN		Y	QT_Hour		
+%R	1609	1569	600	Quality & Testing Roles	R-QA		Y	QT_Hour		
+%R	1610	1609	0	Lab Technician	LAB		Y	QT_Hour		
+%R	1612	1569	700	Handover / Documentation Roles	R-HO		Y	QT_Hour		
+%R	1613	1612	0	Handover Documentation Officer	DOC		Y	QT_Hour		
+%R	1614	1612	100	Inspection Engineer	INS		Y	QT_Hour		
+%T	PROJECT
+%F	proj_id	fy_start_month_num	rsrc_self_add_flag	allow_complete_flag	rsrc_multi_assign_flag	checkout_flag	project_flag	step_complete_flag	cost_qty_recalc_flag	batch_sum_flag	name_sep_char	def_complete_pct_type	proj_short_name	acct_id	orig_proj_id	source_proj_id	base_type_id	clndr_id	sum_base_proj_id	task_code_base	task_code_step	priority_num	wbs_max_sum_level	strgy_priority_num	last_checksum	critical_drtn_hr_cnt	def_cost_per_qty	last_recalc_date	plan_start_date	plan_end_date	scd_end_date	add_date	last_tasksum_date	fcst_start_date	def_duration_type	task_code_prefix	guid	def_qty_type	add_by_name	web_local_root_path	proj_url	def_rate_type	add_act_remain_flag	act_this_per_link_flag	def_task_type	act_pct_link_flag	critical_path_type	task_code_prefix_flag	def_rollup_dates_flag	use_project_baseline_flag	rem_target_link_flag	reset_planned_flag	allow_neg_act_flag	sum_assign_level	last_fin_dates_id	fintmpl_id	last_baseline_update_date	cr_external_key	apply_actuals_date	location_id	last_schedule_date	loaded_scope_level	export_flag	new_fin_dates_id	baselines_to_export	baseline_names_to_export	next_data_date	close_period_flag	sum_refresh_date	trsrcsum_loaded	sumtask_loaded
+%R	4514	1	Y	Y	Y	N	Y	N	N	Y	.	CP_Drtn	BLD-HR-001					6590		1000	10	10	2	500		0	0.0000	2025-11-12 00:00	2025-07-18 09:00		2026-02-21 13:00	2025-11-12 00:00			DT_FixedDUR2	A	GsZNMPqgOE6gmXE0DakefQ	QT_Hour	ADMIN			COST_PER_QTY	N	Y	TT_Task	Y	CT_TotFloat	Y	Y	Y	Y	N	N	SL_Taskrsrc		1					2025-12-20 15:48	7	Y								
+%T	ROLERATE
+%F	role_rate_id	role_id	cost_per_qty	cost_per_qty2	cost_per_qty3	cost_per_qty4	cost_per_qty5	start_date	max_qty_per_hr
+%R	749	1570	2000.0000					2025-01-01 00:00	0.125
+%R	750	1571	1300.0000					2025-01-01 00:00	0.125
+%R	752	1573	1100.0000					2025-01-01 00:00	0.125
+%R	753	1574	1000.0000					2025-01-01 00:00	0.125
+%R	754	1575	1500.0000					2025-01-01 00:00	0.125
+%R	755	1576	900.0000					2025-01-01 00:00	0.125
+%R	758	1579	1200.0000					2025-01-01 00:00	0.125
+%R	760	1581	1200.0000					2025-01-01 00:00	0.125
+%R	761	1582	900.0000					2025-01-01 00:00	0.125
+%R	762	1583	1300.0000					2025-01-01 00:00	0.125
+%R	763	1584	1300.0000					2025-01-01 00:00	0.125
+%R	765	1586	850.0000					2025-01-01 00:00	0.125
+%R	766	1587	900.0000					2025-01-01 00:00	0.125
+%R	767	1588	800.0000					2025-01-01 00:00	0.125
+%R	768	1589	800.0000					2025-01-01 00:00	0.125
+%R	769	1590	850.0000					2025-01-01 00:00	0.125
+%R	770	1591	800.0000					2025-01-01 00:00	0.125
+%R	771	1592	750.0000					2025-01-01 00:00	0.125
+%R	773	1594	650.0000					2025-01-01 00:00	0.625
+%R	774	1595	450.0000					2025-01-01 00:00	1
+%R	775	1596	700.0000					2025-01-01 00:00	1
+%R	776	1597	700.0000					2025-01-01 00:00	1
+%R	777	1598	750.0000					2025-01-01 00:00	1
+%R	778	1599	700.0000					2025-01-01 00:00	1
+%R	779	1600	550.0000					2025-01-01 00:00	0.25
+%R	780	1601	600.0000					2025-01-01 00:00	1
+%R	782	1603	300.0000					2025-01-01 00:00	0.125
+%R	783	1604	350.0000					2025-01-01 00:00	0.125
+%R	784	1605	250.0000					2025-01-01 00:00	0.125
+%R	785	1606	200.0000					2025-01-01 00:00	0.125
+%R	786	1607	250.0000					2025-01-01 00:00	0.125
+%R	787	1608	300.0000					2025-01-01 00:00	0.125
+%R	789	1610	200.0000					2025-01-01 00:00	0.125
+%R	792	1613	350.0000					2025-01-01 00:00	0.125
+%R	793	1614	450.0000					2025-01-01 00:00	0.125
+%T	CALENDAR
+%F	clndr_id	default_flag	clndr_name	proj_id	base_clndr_id	last_chng_date	clndr_type	day_hr_cnt	week_hr_cnt	month_hr_cnt	year_hr_cnt	rsrc_private	clndr_data
+%R	6590	Y	VIM Calender  6 x 8			2025-11-15 00:00	CA_Base	8	48	192	2304	N	(0||CalendarData()(  (0||DaysOfWeek()(    (0||1()())    (0||2()(      (0||0(s|09:00|f|13:00)())      (0||1(s|14:00|f|18:00)())))    (0||3()(      (0||0(s|09:00|f|13:00)())      (0||1(s|14:00|f|18:00)())))    (0||4()(      (0||0(s|09:00|f|13:00)())      (0||1(s|14:00|f|18:00)())))    (0||5()(      (0||0(s|09:00|f|13:00)())      (0||1(s|14:00|f|18:00)())))    (0||6()(      (0||0(s|09:00|f|13:00)())      (0||1(s|14:00|f|18:00)())))    (0||7()(      (0||0(s|09:00|f|13:00)())      (0||1(s|14:00|f|18:00)())))))  (0||VIEW(ShowTotal|N)())  (0||Exceptions()(    (0||0(d|36897)())    (0||1(d|36898)())    (0||2(d|36904)())    (0||3(d|36905)())    (0||4(d|36911)())    (0||5(d|36912)())    (0||6(d|36918)())    (0||7(d|36919)())    (0||8(d|36925)())    (0||9(d|36926)())    (0||10(d|36932)())    (0||11(d|36933)())    (0||12(d|36939)())    (0||13(d|36940)())    (0||14(d|36946)())    (0||15(d|36947)())    (0||16(d|36953)())    (0||17(d|36954)())    (0||18(d|36960)())    (0||19(d|36961)())    (0||20(d|36967)())    (0||21(d|36968)())    (0||22(d|36974)())    (0||23(d|36975)())    (0||24(d|36981)())    (0||25(d|36982)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||26(d|36983)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||27(d|36984)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||28(d|36985)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||29(d|36986)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||30(d|36987)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||31(d|36988)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||32(d|36989)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||33(d|36990)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||34(d|36991)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||35(d|36992)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||36(d|36993)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||37(d|36994)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||38(d|36995)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||39(d|36996)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||40(d|36997)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||41(d|36998)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||42(d|36999)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||43(d|37000)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||44(d|37001)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||45(d|37002)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||46(d|37003)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||47(d|37004)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||48(d|37005)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||49(d|37006)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||50(d|37007)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||51(d|37008)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||52(d|37009)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||53(d|37010)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||54(d|37011)(      (0||0(s|08:00|f|12:00)())      (0||1(s|13:00|f|17:00)())))    (0||55(d|40179)())    (0||56(d|40329)())    (0||57(d|40364)())    (0||58(d|40427)())    (0||59(d|40507)())    (0||60(d|40536)())    (0||61(d|40543)())    (0||62(d|40693)())    (0||63(d|40728)())    (0||64(d|40791)())    (0||65(d|40871)())    (0||66(d|40903)())    (0||67(d|40910)())    (0||68(d|41057)())    (0||69(d|41094)())    (0||70(d|41155)())    (0||71(d|41235)())    (0||72(d|41268)())    (0||73(d|41275)())    (0||74(d|41421)())    (0||75(d|41459)())    (0||76(d|41519)())    (0||77(d|41606)())    (0||78(d|41633)())    (0||79(d|45884)())    (0||80(d|45902)(      (0||0(s|09:00|f|13:00)())))    (0||81(d|45932)())    (0||82(d|45951)())    (0||83(d|45966)(      (0||0(s|09:00|f|13:00)())))    (0||84(d|46016)())    (0||85(d|46048)())    (0||86(d|46065)(      (0||0(s|09:00|f|13:00)())))    (0||87(d|46092)())))))
+%T	SCHEDOPTIONS
+%F	schedoptions_id	proj_id	sched_outer_depend_type	sched_open_critical_flag	sched_lag_early_start_flag	sched_retained_logic	sched_setplantoforecast	sched_float_type	sched_calendar_on_relationship_lag	sched_use_expect_end_flag	sched_progress_override	level_float_thrs_cnt	level_outer_assign_flag	level_outer_assign_priority	level_over_alloc_pct	level_within_float_flag	level_keep_sched_date_flag	level_all_rsrc_flag	sched_use_project_end_date_for_float	enable_multiple_longest_path_calc	limit_multiple_longest_path_calc	max_multiple_longest_path	use_total_float_multiple_longest_paths	key_activity_for_multiple_longest_paths	LevelPriorityList
+%R	1	4514	SD_Both	N	Y	Y	N	FT_FF	rcal_Predecessor	Y	N	0	N	5	25	N	Y	Y	Y	N	Y	10	Y		priority_type,ASC_BY_FIELD/ASC
+%T	PROJWBS
+%F	wbs_id	proj_id	obs_id	seq_num	est_wt	proj_node_flag	sum_data_flag	status_code	wbs_short_name	wbs_name	phase_id	parent_wbs_id	ev_user_pct	ev_etc_user_value	orig_cost	indep_remain_total_cost	ann_dscnt_rate_pct	dscnt_period_type	indep_remain_work_qty	anticip_start_date	anticip_end_date	ev_compute_type	ev_etc_compute_type	guid	tmpl_guid	plan_open_state
+%R	26017	4514	1492	1	1	Y	N	WS_Open	BLD-HR-001	Harmony Residency		26012	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	yZdKZF3ul02h/hOvXBOkGg		
+%R	26021	4514	1492	1	1	N	N	WS_Open	1	Pre- construction Phase		26017	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	Rg46ZapbYEeX9OqPDXFrEA		
+%R	26022	4514	1492	101	1	N	N	WS_Open	2	Construction Phase		26017	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	giQojV38gUKGRsSdHPP2Ug		
+%R	26023	4514	1492	201	1	N	N	WS_Open	3	Testing & Handover Phase		26017	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	veEzRjcYlUO6MdvCF+5Q5w		
+%R	26029	4514	1492	1	1	N	N	WS_Open	1	Site Preparation		26022	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	qpccPdmQv0evPysNYTkxIA		
+%R	26033	4514	1492	101	1	N	N	WS_Open	2	Substructure		26022	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	5Ylx+QTSpkeEJ+eo4fDEZw		
+%R	26041	4514	1492	201	1	N	N	WS_Open	3	Superstructure		26022	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	QX6VMavjWkCGwc3ehAyxxA		
+%R	26048	4514	1492	301	1	N	N	WS_Open	4	MEP Works		26022	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	BVp/qJbI1k+JSRV58SucMg		
+%R	26052	4514	1492	401	1	N	N	WS_Open	5	Finishing Works		26022	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	sdQGznJUOkiH7BrN81EcwQ		
+%R	26053	4514	1492	501	1	N	N	WS_Open	6	Safety & Quality Control		26022	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	jOv2Apum6kK1ZGfPp4GT9g		
+%R	26054	4514	1492	1	1	N	N	WS_Open	1	Internal Finishes		26052	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	f3xpDXH4Xk6oQustjelu9A		
+%R	26055	4514	1492	101	1	N	N	WS_Open	2	External Finishes		26052	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	xnfySdO17U+qfv3PwU9E/g		
+%T	RSRC
+%F	rsrc_id	parent_rsrc_id	clndr_id	role_id	shift_id	user_id	pobs_id	guid	rsrc_seq_num	email_addr	employee_code	office_phone	other_phone	rsrc_name	rsrc_short_name	rsrc_title_name	def_qty_per_hr	cost_qty_type	ot_factor	active_flag	auto_compute_act_flag	def_cost_qty_link_flag	ot_flag	curr_id	unit_id	rsrc_type	location_id	rsrc_notes	load_tasks_flag	level_flag	last_checksum
+%R	6901		6590					WjaTVs4WgU2mg1L9N2pj7g	0					Harmony Residency	BLD_HR		0	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6902	6903	6590	1588				p8EUeyVOeUarVJDEwwO0zw	500					Spervisior R.Singh	RES-SUP-001		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6903	6901	6590					qwvwP8t2+062q/9tmNDhIQ	1					Manpower Resources	MAN		0	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6904	6903	6590	1587				WvC9FjGeI0WTQkHDKiCrLg	406					Supervisor A.Das	RES-SUP-002		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6905	6903	6590	1589				eHrB6PTKPE2bQvIQZT4vag	501					Supervisor S. Sharma	RES-SUP-003		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6906	6903	6590	1579				HcVCMIWs40aeSAlwF0b/Ag	200					Site Engineer P. Kumar	RES-ENG-001		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6907	6903	6590	1579				b7bdjFhYG0ONOCx9nZAV2Q	300					Site Engineer M.Yadav	RES-ENG-002		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6910	6903	6590	1594				Idgrimf4kUS0sbXw0MiPfg	506					Mason Team	RES-MSN-TEAM		0.125	QT_Day		Y	Y	Y	N	30		RT_Labor					
+%R	6911	6903	6590	1597				/iCkpHK2xUChDVYijn7zHg	701					Carpenter Team	RES-CARP-TEAM		0.125	QT_Day		Y	Y	Y	N	30		RT_Labor					
+%R	6912	6903	6590	1595				W9q4EaFizEifLvgRMzxniQ	600					Helper Team	RES-HELP-TEAM		0.125	QT_Day		Y	Y	Y	N	30		RT_Labor					
+%R	6913	6903	6590	1596				iOlzSRBl6U+/WTqR3vjjjg	700					Bar Bending Team	RES-BRB-TEAM		0.125	QT_Day		Y	Y	Y	N	30		RT_Labor					
+%R	6914	6915	6590					MT7aMEAfeU+J1MIxj9eU7g	0					JCB	RES-EQ-JCB		1	QT_Hour		Y	Y	Y	N	30		RT_Equip					
+%R	6915	6901	6590					e7+/Cywys0OcuZ+dG8ciUQ	100					Equipment Resources	EQ		0	QT_Day		Y	Y	Y	N	30		RT_Equip					
+%R	6916	6915	6590					YWnvdW6krE+cvxFf7YCdRg	101					Vibratory Roller	RES-EQ-VRM		1	QT_Hour		Y	Y	Y	N	30		RT_Equip					
+%R	6917	6915	6590					uZpGOn6Y8EOQ3E8PUNdY4A	200					Concrete Mixer	RES-EQ-CM		1	QT_Hour		Y	Y	Y	N	30		RT_Equip					
+%R	6918	6915	6590					sjjROfwtQUmwVEE2DjT49g	300					Plate Compactor	RES-EQ-PLT		1	QT_Hour		Y	Y	Y	N	30		RT_Equip					
+%R	6925	6903	6590	1598				+lAbk8uf+EWF9ID6nO+hGg	702					Electrician Team	RES-ElE-TEAM		0.125	QT_Day		Y	Y	Y	N	30		RT_Labor					
+%R	6926	6903	6590	1599				29kfDcL8/0Cs19SXwXtj+w	703					Plumber Team	RES-PLB-TEAM		0.125	QT_Day		Y	Y	Y	N	30		RT_Labor					
+%R	6927	6903	6590	1573				MldY0J23OUCyFIEErLh5Ag	2					Officer Shyam	RES-OFF-001		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6928	6903	6590	1574				febD66OLg0mROQ1Uxsfgvw	3					M. Kapil	RES-SE-001		0.125	QT_Month		Y	Y	Y	N	30		RT_Labor					
+%R	6929	6915	6590					8k0i2/F9EUuTNGgArwmwRg	400					Bar bending Machine	RES-EQ-BBM		1	QT_Day		Y	Y	Y	N	30		RT_Equip					
+%R	6931	6915	6590					gOvNBk4tnEqAe62IoTnR/Q	401					Tower crane	RES-EQ-CRN		1	QT_Day		Y	Y	Y	N	30		RT_Equip					
+%R	6936	6915	6590					GKRcybFv4ES2INxQR6o3ig	100					Excavator	RES-EQ-EXV		1	QT_Hour		Y	Y	Y	N	30		RT_Equip					
+%R	6938	6903	6590	1570				8mvkSRElhk2B2B21Aki/tw	0					Manager K.l	RES-PM-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6939	6903	6590	1571				ODy4vE8RC0OP+71WC1CKrw	1					Engineer Ml singh	RES-PLN-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6940	6903	6590	1575				uPrc8zKw10+dZHK6Ra187w	4					Rampal	RES-QC-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6941	6903	6590	1576				LXs9LB66eEeEFyESy/PvHQ	5					Manager Karan singh	RES-SM-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6944	6903	6590	1581				4u9mJrlc+0uIgxhbQzHwBg	401					Lahon Prasad	RES-FIN-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6945	6903	6590	1582				GN5Itk2CK0ycfXzVVh/s/Q	402					Captain	RES-SUR-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6946	6903	6590	1583				8iQi4yjLEEai/JTg288kmg	403					Raju	RES-ELC-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6947	6903	6590	1584				xSTUvoQ+Lki994z4tVivtg	404					K.M Rahul	RES-PLB-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6948	6903	6590	1586				zFoE+y8Erkm1EEQ797hIRw	405					Supervisor Rayon	RES-CARP-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6949	6903	6590	1590				Fqlfj6rfnE2PFzQdleCNtw	503					Supervisor K.d	RES-FIN-002		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6950	6903	6590	1591				LUJPLra1r0qR/GWHzsIqUA	504					Supervisor Lal	RES-ELC-002		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6951	6903	6590	1592				W51cFv0MgEWWA4N6dvKTLg	505					Supervisor Chauhan	RES-PLB-002		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6952	6903	6590	1600				IjTm2gT8VE6er/2IqlB/eA	803					Painter Team	RES-PTR-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6953	6903	6590	1601				rs6NdLqZkkK1HO4f5gXoWA	903					Tile Team	RES-TLS-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6954	6903	6590	1603				6eBXRTirJEyaPcBcLLuVlQ	1003					Operator Sonu	RES-JCB-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6955	6903	6590	1604				Ahm63G4lvEuOKeiTFFV5IQ	1103					Operator Kishan	RES-EXV-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6956	6903	6590	1605				hm2XEMHJVE2OSQ58hmY3LA	1203					Operator Sumit	RES-VIB-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6957	6903	6590	1606				f0bBRGFXU0SyGbRNm3NfCA	1303					Operator Ankit	RES-CMP-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6958	6903	6590	1607				IvjsTaAmJUmJR1eCUaK3pQ	1403					Operator Shubham	RES-MIX-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6959	6903	6590	1608				Pl3ByhqapkGlYEMBl2WyQg	1503					Operator Kiran	RES-CRN-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6960	6903	6590	1610				TSjrFnnKSUyv2c5F4WoT6Q	1603					Technician Keshav	RES-LAB-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6962	6903	6590	1613				v/LRfKi8vEaqRoH81hI9cw	1804					Officer Shoham	RES-DOC-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%R	6963	6903	6590	1614				OY48dSczd0WfVx1DgUNcwA	1903					Engineer Piyush	RES-INS-001		0.125	QT_Hour		Y	Y	Y	N	30		RT_Labor					
+%T	RSRCRATE
+%F	rsrc_rate_id	rsrc_id	max_qty_per_hr	cost_per_qty	start_date	shift_period_id	cost_per_qty2	cost_per_qty3	cost_per_qty4	cost_per_qty5
+%R	7176	6901	0	0.0000	2025-01-01 00:00					
+%R	7177	6902	0.125	93.7500	2025-01-01 00:00					
+%R	7178	6903	0	0.0000	2025-01-01 00:00					
+%R	7179	6904	0.125	78.1250	2025-01-01 00:00					
+%R	7180	6905	0.125	67.7083	2025-01-01 00:00					
+%R	7181	6906	0.125	130.2083	2025-01-01 00:00					
+%R	7182	6907	0.125	104.1667	2025-01-01 00:00					
+%R	7185	6910	0.625	187.5000	2025-01-01 00:00					
+%R	7186	6911	0.5	150.0000	2025-01-01 00:00					
+%R	7187	6912	1.25	62.5000	2025-01-01 00:00					
+%R	7188	6913	0.5	100.0000	2025-01-01 00:00					
+%R	7189	6914	0.125	1200.0000	2025-01-01 00:00					
+%R	7190	6915	0	0.0000	2025-01-01 00:00					
+%R	7191	6916	0.125	900.0000	2025-01-01 00:00					
+%R	7192	6917	0.25	700.0000	2025-01-01 00:00					
+%R	7193	6918	0.25	500.0000	2025-01-01 00:00					
+%R	7200	6925	0.25	162.5000	2025-01-01 00:00					
+%R	7201	6926	0.375	162.5000	2025-01-01 00:00					
+%R	7202	6927	0.125	114.5833	2025-01-01 00:00					
+%R	7203	6928	0.125	62.5000	2025-01-01 00:00					
+%R	7204	6929	0.125	175.0000	2025-01-01 00:00					
+%R	7206	6931	0.125	2750.0000	2025-01-01 00:00					
+%R	7211	6936	0.125	2000.0000	2025-01-01 00:00					
+%R	7213	6938	0.125	2000.0000	2025-01-01 00:00					
+%R	7214	6939	0.125	1300.0000	2025-01-01 00:00					
+%R	7215	6940	0.125	1500.0000	2025-01-01 00:00					
+%R	7216	6941	0.125	900.0000	2025-01-01 00:00					
+%R	7219	6944	0.125	1200.0000	2025-01-01 00:00					
+%R	7220	6945	0.125	900.0000	2025-01-01 00:00					
+%R	7221	6946	0.125	1300.0000	2025-01-01 00:00					
+%R	7222	6947	0.125	1300.0000	2025-01-01 00:00					
+%R	7223	6948	0.125	850.0000	2025-01-01 00:00					
+%R	7224	6949	0.125	850.0000	2025-01-01 00:00					
+%R	7225	6950	0.125	800.0000	2025-01-01 00:00					
+%R	7226	6951	0.125	750.0000	2025-01-01 00:00					
+%R	7227	6952	0.25	550.0000	2025-01-01 00:00					
+%R	7228	6953	1	600.0000	2025-01-01 00:00					
+%R	7229	6954	1	300.0000	2025-01-01 00:00					
+%R	7230	6955	1	350.0000	2025-01-01 00:00					
+%R	7231	6956	1	250.0000	2025-01-01 00:00					
+%R	7232	6957	1	200.0000	2025-01-01 00:00					
+%R	7233	6958	1	250.0000	2025-01-01 00:00					
+%R	7234	6959	1	300.0000	2025-01-01 00:00					
+%R	7235	6960	0.125	200.0000	2025-01-01 00:00					
+%R	7237	6962	0.125	350.0000	2025-01-01 00:00					
+%R	7238	6963	0.125	450.0000	2025-01-01 00:00					
+%T	RSRCROLE
+%F	rsrc_id	role_id	skill_level	role_short_name	role_name	rsrc_short_name	rsrc_name	rsrc_type	rsrc_role_id
+%R	6902	1588	3	MSN	Masonry Supervisor	RES-SUP-001	Spervisior R.Singh	RT_Labor	1588
+%R	6904	1587	3	RF	Reinforcement Supervisor	RES-SUP-002	Supervisor A.Das	RT_Labor	1587
+%R	6905	1589	2	CNC	Concrete Supervisor	RES-SUP-003	Supervisor S. Sharma	RT_Labor	1589
+%R	6906	1579	3	CIV	Civil Site Engineer	RES-ENG-001	Site Engineer P. Kumar	RT_Labor	1579
+%R	6907	1579	4	CIV	Civil Site Engineer	RES-ENG-002	Site Engineer M.Yadav	RT_Labor	1579
+%R	6910	1594	3	MSN	Mason	RES-MSN-TEAM	Mason Team	RT_Labor	1594
+%R	6911	1597	3	CARP	Carpenter	RES-CARP-TEAM	Carpenter Team	RT_Labor	1597
+%R	6912	1595	3	HLP	Helper/General Labour	RES-HELP-TEAM	Helper Team	RT_Labor	1595
+%R	6913	1596	3	BRB	Bar Bender	RES-BRB-TEAM	Bar Bending Team	RT_Labor	1596
+%R	6925	1598	3	ELC	Electrician	RES-ElE-TEAM	Electrician Team	RT_Labor	1598
+%R	6926	1599	3	PLB	Plumber	RES-PLB-TEAM	Plumber Team	RT_Labor	1599
+%R	6927	1573	2	QS	Quantity Surveyor	RES-OFF-001	Officer Shyam	RT_Labor	1573
+%R	6928	1574	3	SC	Safety Officer	RES-SE-001	M. Kapil	RT_Labor	1574
+%R	6938	1570	2	PM	Project Manager	RES-PM-001	Manager K.l	RT_Labor	1570
+%R	6939	1571	3	PLN	Planning Engineer	RES-PLN-001	Engineer Ml singh	RT_Labor	1571
+%R	6940	1575	3	QC	QA/QC Engineer	RES-QC-001	Rampal	RT_Labor	1575
+%R	6941	1576	3	SM	Site Manager	RES-SM-001	Manager Karan singh	RT_Labor	1576
+%R	6944	1581	3	FIN	Finishing Engineer	RES-FIN-001	Lahon Prasad	RT_Labor	1581
+%R	6945	1582	3	SUR	Surveyor	RES-SUR-001	Captain	RT_Labor	1582
+%R	6946	1583	3	ELC	Electrical Engineer (MEP)	RES-ELC-001	Raju	RT_Labor	1583
+%R	6947	1584	3	PLB	Plumbing Engineer(MEP)	RES-PLB-001	K.M Rahul	RT_Labor	1584
+%R	6948	1586	3	CARP	Carpentry Supervisor	RES-CARP-001	Supervisor Rayon	RT_Labor	1586
+%R	6949	1590	3	FIN	Finishing Supervisor	RES-FIN-002	Supervisor K.d	RT_Labor	1590
+%R	6950	1591	3	ELC	Electrical Supervisor	RES-ELC-002	Supervisor Lal	RT_Labor	1591
+%R	6951	1592	3	PLB	Plumbing Supervisor	RES-PLB-002	Supervisor Chauhan	RT_Labor	1592
+%R	6952	1600	3	PTR	Painter / Putty worker	RES-PTR-001	Painter Team	RT_Labor	1600
+%R	6953	1601	3	TLS	Tile Mason	RES-TLS-001	Tile Team	RT_Labor	1601
+%R	6954	1603	3	JCB	JCB Operator	RES-JCB-001	Operator Sonu	RT_Labor	1603
+%R	6955	1604	3	EXV	Excavator Operator	RES-EXV-001	Operator Kishan	RT_Labor	1604
+%R	6956	1605	3	VIB	Vibrator Operator	RES-VIB-001	Operator Sumit	RT_Labor	1605
+%R	6957	1606	3	CMP	Compactor Operator	RES-CMP-001	Operator Ankit	RT_Labor	1606
+%R	6958	1607	3	MIX	Concrete Mixer Operator	RES-MIX-001	Operator Shubham	RT_Labor	1607
+%R	6959	1608	3	CRN	Crane Operator	RES-CRN-001	Operator Kiran	RT_Labor	1608
+%R	6960	1610	3	LAB	Lab Technician	RES-LAB-001	Technician Keshav	RT_Labor	1610
+%R	6962	1613	3	DOC	Handover Documentation Officer	RES-DOC-001	Officer Shoham	RT_Labor	1613
+%R	6963	1614	3	INS	Inspection Engineer	RES-INS-001	Engineer Piyush	RT_Labor	1614
+%T	TASK
+%F	task_id	proj_id	wbs_id	clndr_id	phys_complete_pct	rev_fdbk_flag	est_wt	lock_plan_flag	auto_compute_act_flag	complete_pct_type	task_type	duration_type	status_code	task_code	task_name	rsrc_id	total_float_hr_cnt	free_float_hr_cnt	remain_drtn_hr_cnt	act_work_qty	remain_work_qty	target_work_qty	target_drtn_hr_cnt	target_equip_qty	act_equip_qty	remain_equip_qty	cstr_date	act_start_date	act_end_date	late_start_date	late_end_date	expect_end_date	early_start_date	early_end_date	restart_date	reend_date	target_start_date	target_end_date	rem_late_start_date	rem_late_end_date	cstr_type	priority_type	suspend_date	resume_date	float_path	float_path_order	guid	tmpl_guid	cstr_date2	cstr_type2	driving_path_flag	act_this_per_work_qty	act_this_per_equip_qty	external_early_start_date	external_late_end_date	create_date	update_date	create_user	update_user	location_id	crt_path_num
+%R	101722	4514	26021	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1000	Site Survey & Soil Investigation	6906	0	0	40	0	17.5	17.5	40	0	0	0				2025-11-12 09:00	2025-11-17 18:00		2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00		PT_Normal					bADbiZ+gt0ecxojPsQFubA				Y	0	0			2025-11-12 12:01	2025-12-20 19:07	NotPrmUser	NotPrmUser		
+%R	101723	4514	26021	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1010	Design & Drawing Approval	6939	568	0	56	0	28	28	56	0	0	0				2026-02-13 14:00	2026-02-21 13:00		2025-11-20 09:00	2025-11-27 18:00	2025-11-20 09:00	2025-11-27 18:00	2025-11-20 09:00	2025-11-27 18:00	2026-02-13 14:00	2026-02-21 13:00		PT_Normal					yFuKUsfJOU6i41BlUS1RLA				N	0	0			2025-11-12 12:02	2025-12-20 23:50	NotPrmUser	NotPrmUser		
+%R	101724	4514	26021	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1020	Estimation & BOQ Preparation	6927	584	584	40	0	10	10	40	0	0	0				2026-02-16 14:00	2026-02-21 13:00		2025-11-20 09:00	2025-11-25 18:00	2025-11-20 09:00	2025-11-25 18:00	2025-11-20 09:00	2025-11-25 18:00	2026-02-16 14:00	2026-02-21 13:00		PT_Normal					ztXlRROGFEaqIOV6vlzy1Q				N	0	0			2025-11-12 12:03	2025-12-20 23:33	NotPrmUser	NotPrmUser		
+%R	101725	4514	26021	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1030	Mobilization(Site office, Barricading, Utilities)		0	0	40	0	15	15	40	5	0	5				2025-11-12 09:00	2025-11-17 18:00		2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00		PT_Normal					pz0eSL8emkCUYwKaLFq8TA				Y	0	0			2025-11-12 12:03	2025-12-20 23:36	NotPrmUser	NotPrmUser		
+%R	101726	4514	26029	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1040	Site Clearing & Leveling	6907	0	0	40	0	11.5	11.5	40	5	0	5				2025-11-18 09:00	2025-11-22 18:00		2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00		PT_Normal					fM43ZmSSj0mQ2mADOYi29A				Y	0	0			2025-11-12 12:08	2025-12-20 23:39	NotPrmUser	NotPrmUser		
+%R	101727	4514	26029	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1050	Temporary Works (Barricades, Access Roads)	6912	616	0	64	0	20	20	64	0	0	0				2026-02-12 09:00	2026-02-21 13:00		2025-11-12 09:00	2025-11-20 18:00	2025-11-12 09:00	2025-11-20 18:00	2025-11-12 09:00	2025-11-20 18:00	2026-02-12 09:00	2026-02-21 13:00		PT_Normal					zdfHc17Msk6xpn0unR5Nbw				N	0	0			2025-11-12 12:08	2025-12-20 23:40	NotPrmUser	NotPrmUser		
+%R	101728	4514	26029	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1060	Material Handling & Storage Setup	6912	624	624	32	0	5.2	5.2	32	0	0	0				2026-02-17 14:00	2026-02-21 13:00		2025-11-15 09:00	2025-11-19 18:00	2025-11-15 09:00	2025-11-19 18:00	2025-11-15 09:00	2025-11-19 18:00	2026-02-17 14:00	2026-02-21 13:00		PT_Normal					C19HSO+lx0ef6HWOWuR/7w				N	0	0			2025-11-12 12:08	2025-12-20 23:41	NotPrmUser	NotPrmUser		
+%R	101729	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1070	Excavation	6955	0	0	32	0	9.2	9.2	32	32	0	32				2025-11-24 09:00	2025-11-27 18:00		2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00		PT_Normal					vmTSTbnhVEakOwI+qZJLfw				Y	0	0			2025-11-12 12:26	2025-12-20 23:42	NotPrmUser	NotPrmUser		
+%R	101730	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1080	PCC	6910	0	0	16	0	7	7	16	4	0	4				2025-11-28 09:00	2025-11-29 18:00		2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00		PT_Normal					lgjs2nbGdk2LGGH2I8A4Cg				Y	0	0			2025-11-12 12:26	2025-12-20 23:47	NotPrmUser	NotPrmUser		
+%R	101731	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1090	Footing Reinforcement & Concreting	6913	0	0	32	0	12	12	32	8	0	8				2025-12-01 09:00	2025-12-04 18:00		2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00		PT_Normal					nPxNjWAYaESNOLH0hifLYw				Y	0	0			2025-11-12 12:26	2025-12-20 23:49	NotPrmUser	NotPrmUser		
+%R	101732	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1100	Curing	6912	0	0	56	0	4.9	4.9	56	0	0	0				2025-12-01 09:00	2025-12-08 18:00		2025-12-01 09:00	2025-12-08 18:00	2025-12-01 09:00	2025-12-08 18:00	2025-12-01 09:00	2025-12-08 18:00	2025-12-01 09:00	2025-12-08 18:00		PT_Normal					tICc1V7IUEKXwyq/TNyM8Q				Y	0	0			2025-11-12 12:31	2025-12-20 23:51	NotPrmUser	NotPrmUser		
+%R	101733	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1110	Plinth Beam	6913	0	0	32	0	14	14	32	4	0	4				2025-12-08 09:00	2025-12-11 18:00		2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00		PT_Normal					/hy6d/PmEEiuTSt78Cdfwg				Y	0	0			2025-11-12 12:31	2025-12-21 00:06	NotPrmUser	NotPrmUser		
+%R	101734	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1120	Backfilling & Compaction	6957	0	0	24	0	6	6	24	3	0	3				2025-12-12 09:00	2025-12-15 18:00		2025-12-12 09:00	2025-12-15 18:00	2025-12-12 09:00	2025-12-15 18:00	2025-12-12 09:00	2025-12-15 18:00	2025-12-12 09:00	2025-12-15 18:00		PT_Normal					vr/HI6tFLkWE9FAiEisAVQ				Y	0	0			2025-11-12 12:31	2025-12-21 00:07	NotPrmUser	NotPrmUser		
+%R	101735	4514	26033	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1130	DPC	6910	0	0	16	0	2.4	2.4	16	0	0	0				2025-12-16 09:00	2025-12-17 18:00		2025-12-16 09:00	2025-12-17 18:00	2025-12-16 09:00	2025-12-17 18:00	2025-12-16 09:00	2025-12-17 18:00	2025-12-16 09:00	2025-12-17 18:00		PT_Normal					YADVBMFUmUSpNIDsvrkjsg				Y	0	0			2025-11-12 12:31	2025-12-21 00:07	NotPrmUser	NotPrmUser		
+%R	101736	4514	26041	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1140	Column & Beam Reinforcement	6913	0	0	40	0	7.5	7.5	40	5	0	5				2025-12-18 09:00	2025-12-23 18:00		2025-12-18 09:00	2025-12-23 18:00	2025-12-18 09:00	2025-12-23 18:00	2025-12-18 09:00	2025-12-23 18:00	2025-12-18 09:00	2025-12-23 18:00		PT_Normal					HY3WGBJ8j0qGYudfHqH9ug				Y	0	0			2025-11-12 13:58	2025-12-21 00:09	NotPrmUser	NotPrmUser		
+%R	101737	4514	26041	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1150	Shuttering & Concreting	6911	0	0	40	0	17.5	17.5	40	45	0	45				2025-12-24 09:00	2025-12-30 18:00		2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00		PT_Normal					ajYAz3fk2kq+Zn5BHJlM9Q				Y	0	0			2025-11-12 13:58	2025-12-21 00:10	NotPrmUser	NotPrmUser		
+%R	101738	4514	26041	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1160	Slab casting	6910	0	0	32	0	13.2	13.2	32	8	0	8				2025-12-31 09:00	2026-01-03 18:00		2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00		PT_Normal					v6JwIaCOsEqcChofymLTSQ				Y	0	0			2025-11-12 13:58	2025-12-21 00:11	NotPrmUser	NotPrmUser		
+%R	101739	4514	26041	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1170	Masonary (Walls)	6910	0	0	40	0	7.5	7.5	40	0	0	0				2026-01-08 09:00	2026-01-13 18:00		2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00		PT_Normal					H7wpY2Cp7UqIOFyelpylFw				Y	0	0			2025-11-12 13:58	2025-12-21 00:12	NotPrmUser	NotPrmUser		
+%R	101740	4514	26041	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1180	Lintels & Sunshade	6910	72	0	24	0	4.5	4.5	24	0	0	0				2026-01-24 09:00	2026-01-28 18:00		2026-01-14 09:00	2026-01-16 18:00	2026-01-14 09:00	2026-01-16 18:00	2026-01-14 09:00	2026-01-16 18:00	2026-01-24 09:00	2026-01-28 18:00		PT_Normal					0gZ+0w/CyUqRM4KJQaHe5w				N	0	0			2025-11-12 13:58	2025-12-21 00:12	NotPrmUser	NotPrmUser		
+%R	101741	4514	26041	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1190	Door & Window Frames	6911	160	160	24	0	3.9	3.9	24	0	0	0				2026-02-18 14:00	2026-02-21 13:00		2026-01-24 09:00	2026-01-28 18:00	2026-01-24 09:00	2026-01-28 18:00	2026-01-24 09:00	2026-01-28 18:00	2026-02-18 14:00	2026-02-21 13:00		PT_Normal					EODM3zDn+kiWN6LBElzFjA				N	0	0			2025-11-12 14:00	2025-12-21 00:13	NotPrmUser	NotPrmUser		
+%R	101742	4514	26048	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1200	Electrical Wiring & Fixtures	6925	40	40	48	0	9	9	48	0	0	0				2026-01-14 09:00	2026-01-20 18:00		2026-01-08 09:00	2026-01-14 18:00	2026-01-08 09:00	2026-01-14 18:00	2026-01-08 09:00	2026-01-14 18:00	2026-01-14 09:00	2026-01-20 18:00		PT_Normal					JBanRV0dr0yPIu6Ubd+5zQ				N	0	0			2025-11-12 14:02	2025-12-21 00:13	NotPrmUser	NotPrmUser		
+%R	101743	4514	26048	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1210	Plumbing Works	6926	192	192	40	0	7.5	7.5	40	0	0	0				2026-02-06 09:00	2026-02-11 18:00		2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00	2026-02-06 09:00	2026-02-11 18:00		PT_Normal					8AlSWfGlT0y78kuN308PSQ				N	0	0			2025-11-12 14:02	2025-12-21 00:14	NotPrmUser	NotPrmUser		
+%R	101744	4514	26048	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1220	Firefighting Installations	6926	264	264	32	0	8	8	32	0	0	0				2026-02-17 14:00	2026-02-21 13:00		2026-01-08 09:00	2026-01-12 18:00	2026-01-08 09:00	2026-01-12 18:00	2026-01-08 09:00	2026-01-12 18:00	2026-02-17 14:00	2026-02-21 13:00		PT_Normal					PVQIK/Wfv0ylbNedbMF3Ng				N	0	0			2025-11-12 14:02	2025-12-21 00:15	NotPrmUser	NotPrmUser		
+%R	101745	4514	26054	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1230	Plaster	6910	0	0	40	0	7.5	7.5	40	0	0	0				2026-01-20 09:00	2026-01-24 18:00		2026-01-20 09:00	2026-01-24 18:00	2026-01-20 09:00	2026-01-24 18:00	2026-01-20 09:00	2026-01-24 18:00	2026-01-20 09:00	2026-01-24 18:00		PT_Normal					FBlE4s4+l0OKgP3EtrVgJw				Y	0	0			2025-11-12 14:04	2025-12-21 00:15	NotPrmUser	NotPrmUser		
+%R	101746	4514	26054	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1240	Flooring & Tiling	6953	0	0	40	0	11.5	11.5	40	0	0	0				2026-01-30 09:00	2026-02-04 18:00		2026-01-30 09:00	2026-02-04 18:00	2026-01-30 09:00	2026-02-04 18:00	2026-01-30 09:00	2026-02-04 18:00	2026-01-30 09:00	2026-02-04 18:00		PT_Normal					jUStVK5nNEiQtxPotpD4wg				Y	0	0			2025-11-12 14:04	2025-12-21 00:17	NotPrmUser	NotPrmUser		
+%R	101747	4514	26054	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1250	Painting	6952	0	0	32	0	5.2	5.2	32	0	0	0				2026-02-09 09:00	2026-02-13 13:00		2026-02-09 09:00	2026-02-13 13:00	2026-02-09 09:00	2026-02-13 13:00	2026-02-09 09:00	2026-02-13 13:00	2026-02-09 09:00	2026-02-13 13:00		PT_Normal					jB7Wy4Z0/0qEO6IMSt8hGw				Y	0	0			2025-11-12 14:04	2025-12-21 00:17	NotPrmUser	NotPrmUser		
+%R	101748	4514	26054	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1260	Electrical Fixtures	6946	0	0	24	0	3	3	24	0	0	0				2026-02-09 09:00	2026-02-11 18:00		2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00		PT_Normal					wfenNLyLmEOKXvV/+6Hl0w				Y	0	0			2025-11-12 14:04	2025-12-21 00:39	NotPrmUser	NotPrmUser		
+%R	101749	4514	26054	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1270	Plumbing Fixtures	6947	0	0	24	0	3	3	24	0	0	0				2026-02-09 09:00	2026-02-11 18:00		2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00		PT_Normal					RUbWcYCRLUyjFdBEcIuURg				Y	0	0			2025-11-12 14:04	2025-12-21 00:40	NotPrmUser	NotPrmUser		
+%R	101750	4514	26055	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1280	External Plaster & Paint	6910	72	0	40	0	23.5	23.5	40	10	0	10				2026-01-29 09:00	2026-02-03 18:00		2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00	2026-01-29 09:00	2026-02-03 18:00		PT_Normal					sdE8mIP6IEqsnV3kmr6RiQ				N	0	0			2025-11-12 14:07	2025-12-20 15:48	NotPrmUser	NotPrmUser		
+%R	101751	4514	26055	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1290	Compound Wall	6910	160	160	32	0	15.2	15.2	32	4	0	4				2026-02-17 14:00	2026-02-21 13:00		2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00	2026-02-17 14:00	2026-02-21 13:00		PT_Normal					UCjdAQ3bk0+YHnwuVwSbvw				N	0	0			2025-11-12 14:07	2025-12-20 15:48	NotPrmUser	NotPrmUser		
+%R	101752	4514	26055	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1300	Landscaping & Paving	6912	72	72	32	0	11.2	11.2	32	4	0	4				2026-02-04 09:00	2026-02-07 18:00		2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00	2026-02-04 09:00	2026-02-07 18:00		PT_Normal					FOGZOob6lUeUgD5yWQYUHQ				N	0	0			2025-11-12 14:07	2025-12-20 15:48	NotPrmUser	NotPrmUser		
+%R	101753	4514	26053	6590	0	N	1	N	N	CP_Drtn	TT_LOE	DT_FixedDUR2	TK_NotStart	A1310	PPE & Toolbox Talks	6928	0	0	680	0	85	85	680	0	0	0				2025-11-12 09:00	2026-02-21 13:00		2025-11-12 09:00	2026-02-21 13:00	2025-11-12 09:00	2026-02-21 13:00	2025-11-12 09:00	2026-02-21 13:00	2025-11-12 09:00	2026-02-21 13:00		PT_Normal					xXl+vBH2AkaTEI81PP+8zw				Y	0	0			2025-11-12 14:08	2025-12-21 00:41	NotPrmUser	NotPrmUser		
+%R	101754	4514	26053	6590	0	N	1	N	N	CP_Drtn	TT_LOE	DT_FixedDUR2	TK_NotStart	A1320	Site Inspections	6940	0	0	640	0	80	80	640	0	0	0				2025-11-18 09:00	2026-02-21 13:00		2025-11-18 09:00	2026-02-21 13:00	2025-11-18 09:00	2026-02-21 13:00	2025-11-18 09:00	2026-02-21 13:00	2025-11-18 09:00	2026-02-21 13:00		PT_Normal					LlR9PAoBekOzFbMJ0PAIig				Y	0	0			2025-11-12 14:08	2025-12-21 00:42	NotPrmUser	NotPrmUser		
+%R	101755	4514	26053	6590	0	N	1	N	N	CP_Drtn	TT_LOE	DT_FixedDUR2	TK_NotStart	A1330	Material Testing & Quality Reports	6960	0	0	488	0	91.5	91.5	488	0	0	0				2025-12-01 09:00	2026-02-11 18:00		2025-12-01 09:00	2026-02-11 18:00	2025-12-01 09:00	2026-02-11 18:00	2025-12-01 09:00	2026-02-11 18:00	2025-12-01 09:00	2026-02-11 18:00		PT_Normal					5ObQx+6tpEK3cAPZVtJMRA				Y	0	0			2025-11-12 14:08	2025-12-21 00:42	NotPrmUser	NotPrmUser		
+%R	101756	4514	26023	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1340	Final Testing & Commissioning	6946	0	0	24	0	3	3	24	0	0	0				2026-02-09 09:00	2026-02-11 18:00		2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00		PT_Normal					u5gjY/rd1kuCqo/rkN6nMg				Y	0	0			2025-11-12 14:09	2025-12-21 00:43	NotPrmUser	NotPrmUser		
+%R	101757	4514	26023	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	A1350	Snag List Rectification	6949	0	0	24	0	3	3	24	0	0	0				2026-02-12 09:00	2026-02-16 13:00		2026-02-12 09:00	2026-02-16 13:00	2026-02-12 09:00	2026-02-16 13:00	2026-02-12 09:00	2026-02-16 13:00	2026-02-12 09:00	2026-02-16 13:00		PT_Normal					VtsosRCGkkeRPzlzSEKS1w				Y	0	0			2025-11-12 14:09	2025-12-21 00:43	NotPrmUser	NotPrmUser		
+%R	101758	4514	26023	6590	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDrtn	TK_NotStart	A1360	Handover Documentation	6962	0	0	40	0	5	5	40	0	0	0				2026-02-16 14:00	2026-02-21 13:00		2026-02-16 14:00	2026-02-21 13:00	2026-02-16 14:00	2026-02-21 13:00	2026-02-16 14:00	2026-02-21 13:00	2026-02-16 14:00	2026-02-21 13:00		PT_Normal					BlSN3wBB9E62CX25tMOyWA				Y	0	0			2025-11-12 14:10	2025-12-21 00:43	NotPrmUser	NotPrmUser		
+%R	101759	4514	26023	6590	0	N	1	N	N	CP_Drtn	TT_Rsrc	DT_FixedDrtn	TK_NotStart	A1370	Client Approval & Site Demobilization	6938	0	0	40	0	5	5	40	0	0	0				2026-02-21 13:00	2026-02-21 13:00		2026-02-21 13:00	2026-02-21 13:00	2026-02-21 14:00	2026-02-27 13:00	2026-02-21 14:00	2026-02-27 13:00	2026-02-21 13:00	2026-02-21 13:00		PT_Normal					+zZvM/YfcUaYIXCVGPzMQg				Y	0	0			2025-11-12 14:10	2025-12-21 00:45	NotPrmUser	NotPrmUser		
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	proj_id	pred_proj_id	pred_type	lag_hr_cnt	comments	float_path	aref	arls
+%R	40807	101723	101722	4514	4514	PR_FS	16			2025-11-19 18:00	2026-02-11 09:00
+%R	40808	101724	101723	4514	4514	PR_SS	0			2025-11-20 09:00	2026-02-07 09:00
+%R	40811	101728	101727	4514	4514	PR_SS	24			2025-11-14 18:00	2026-02-04 09:00
+%R	40812	101730	101729	4514	4514	PR_FS	0			2025-11-27 18:00	2025-11-28 09:00
+%R	40813	101731	101730	4514	4514	PR_FS	0			2025-11-29 18:00	2025-12-01 09:00
+%R	40814	101732	101731	4514	4514	PR_SS	0			2025-12-01 09:00	2025-11-26 09:00
+%R	40815	101733	101732	4514	4514	PR_SS	48			2025-12-06 18:00	2025-11-22 09:00
+%R	40816	101734	101733	4514	4514	PR_FS	0			2025-12-11 18:00	2025-12-12 09:00
+%R	40817	101735	101734	4514	4514	PR_FS	0			2025-12-15 18:00	2025-12-16 09:00
+%R	40818	101737	101736	4514	4514	PR_FS	0			2025-12-23 18:00	2025-12-24 09:00
+%R	40819	101738	101737	4514	4514	PR_FS	0			2025-12-30 18:00	2025-12-31 09:00
+%R	40820	101739	101738	4514	4514	PR_SS	56			2026-01-07 18:00	2025-12-26 09:00
+%R	40821	101740	101739	4514	4514	PR_FS	0			2026-01-13 18:00	2026-01-24 09:00
+%R	40833	101757	101756	4514	4514	PR_FS	0			2026-02-11 18:00	2026-02-12 09:00
+%R	40834	101758	101757	4514	4514	PR_FS	0			2026-02-16 13:00	2026-02-16 14:00
+%R	40835	101759	101758	4514	4514	PR_FS	0			2026-02-21 13:00	2026-02-21 13:00
+%R	40837	101726	101725	4514	4514	PR_FS	0			2025-11-17 18:00	2025-11-18 09:00
+%R	40838	101736	101735	4514	4514	PR_FS	0			2025-12-17 18:00	2025-12-18 09:00
+%R	40840	101742	101739	4514	4514	PR_SS	0			2026-01-08 09:00	2026-01-08 09:00
+%R	40844	101759	101753	4514	4514	PR_FF	0			2026-02-16 14:00	2026-02-21 13:00
+%R	40845	101753	101725	4514	4514	PR_SS	0			2025-11-12 09:00	2025-11-06 09:00
+%R	40846	101754	101726	4514	4514	PR_SS	0			2025-11-18 09:00	2025-11-12 09:00
+%R	40847	101758	101754	4514	4514	PR_FF	0			2026-02-16 14:00	2026-02-21 13:00
+%R	40848	101755	101730	4514	4514	PR_FS	0			2025-11-29 18:00	2025-12-01 09:00
+%R	40849	101756	101755	4514	4514	PR_FF	0			2026-02-09 09:00	2026-02-11 18:00
+%R	40850	101756	101752	4514	4514	PR_FS	0			2026-01-28 18:00	2026-02-09 09:00
+%R	40851	101756	101748	4514	4514	PR_FF	0			2026-02-09 09:00	2026-02-11 18:00
+%R	40852	101756	101749	4514	4514	PR_FF	0			2026-02-09 09:00	2026-02-11 18:00
+%R	40853	101725	101722	4514	4514	PR_SS	0			2025-11-12 09:00	2025-11-06 09:00
+%R	40855	101727	101725	4514	4514	PR_SS	0			2025-11-12 09:00	2026-02-06 09:00
+%R	40857	101729	101726	4514	4514	PR_FS	0			2025-11-22 18:00	2025-11-24 09:00
+%R	40858	101741	101739	4514	4514	PR_SS	112			2026-01-23 18:00	2026-01-27 09:00
+%R	40859	101742	101738	4514	4514	PR_SS	24			2026-01-02 18:00	2026-01-06 09:00
+%R	40860	101743	101738	4514	4514	PR_SS	24			2026-01-02 18:00	2026-01-29 09:00
+%R	40861	101743	101739	4514	4514	PR_SS	0			2026-01-08 09:00	2026-01-31 09:00
+%R	40862	101744	101738	4514	4514	PR_SS	40			2026-01-05 18:00	2026-02-06 09:00
+%R	40863	101744	101739	4514	4514	PR_SS	0			2026-01-08 09:00	2026-02-11 09:00
+%R	40864	101745	101739	4514	4514	PR_SS	80			2026-01-19 18:00	2026-01-02 09:00
+%R	40865	101745	101742	4514	4514	PR_FF	0			2026-01-09 09:00	2026-01-24 18:00
+%R	40866	101746	101745	4514	4514	PR_FS	24			2026-01-29 18:00	2026-01-27 09:00
+%R	40867	101746	101742	4514	4514	PR_FF	96			2026-01-23 09:00	2026-01-21 09:00
+%R	40868	101747	101745	4514	4514	PR_FF	0			2026-01-21 09:00	2026-02-13 13:00
+%R	40869	101747	101746	4514	4514	PR_FS	24			2026-02-07 18:00	2026-02-05 09:00
+%R	40870	101748	101742	4514	4514	PR_FF	0			2026-01-12 09:00	2026-02-11 18:00
+%R	40871	101748	101747	4514	4514	PR_SS	0			2026-02-09 09:00	2026-02-04 09:00
+%R	40872	101749	101743	4514	4514	PR_FF	0			2026-01-10 09:00	2026-02-11 18:00
+%R	40873	101749	101747	4514	4514	PR_SS	0			2026-02-09 09:00	2026-02-04 09:00
+%R	40874	101750	101739	4514	4514	PR_FS	0			2026-01-13 18:00	2026-01-29 09:00
+%R	40875	101750	101740	4514	4514	PR_FS	0			2026-01-16 18:00	2026-01-29 09:00
+%R	40878	101751	101750	4514	4514	PR_FS	0			2026-01-22 18:00	2026-02-17 14:00
+%R	40879	101752	101750	4514	4514	PR_FS	0			2026-01-22 18:00	2026-02-04 09:00
+%R	40880	101758	101756	4514	4514	PR_SS	0			2026-02-09 09:00	2026-02-12 09:00
+%R	40881	101759	101757	4514	4514	PR_FF	0			2026-02-10 09:00	2026-02-21 13:00
+%T	TASKRSRC
+%F	taskrsrc_id	task_id	proj_id	cost_qty_link_flag	role_id	acct_id	rsrc_id	pobs_id	skill_level	remain_qty	target_qty	remain_qty_per_hr	target_lag_drtn_hr_cnt	target_qty_per_hr	act_ot_qty	act_reg_qty	relag_drtn_hr_cnt	ot_factor	cost_per_qty	target_cost	act_reg_cost	act_ot_cost	remain_cost	act_start_date	act_end_date	restart_date	reend_date	target_start_date	target_end_date	rem_late_start_date	rem_late_end_date	rollup_dates_flag	target_crv	remain_crv	actual_crv	ts_pend_act_end_flag	guid	rate_type	act_this_per_cost	act_this_per_qty	curv_id	rsrc_type	cost_per_qty_source_type	create_user	create_date	has_rsrchours	taskrsrc_sum_id
+%R	83244	101722	4514	Y	1579		6906		3	5	5	0.125	0	0.125	0	0	0		130.2083	651.0417	0.0000	0.0000	651.0417			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	UTI329ubXEyUYaO0fN5jcQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 18:09		
+%R	83245	101722	4514	Y	1588		6902		3	5	5	0.125	0	0.125	0	0	0		93.7500	468.7500	0.0000	0.0000	468.7500			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	LD+YoidAzkiEWE6H9XLRBQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 18:54		
+%R	83246	101722	4514	Y	1594		6910		3	2.5	2.5	0.0625	0	0.0625	0	0	0		187.5000	468.7500	0.0000	0.0000	468.7500			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	cAbqbBeWUU+E64M3ls6Ahg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 18:54		
+%R	83247	101722	4514	Y	1582		6945		3	5	5	0.125	0	0.125	0	0	0		900.0000	4500.0000	0.0000	0.0000	4500.0000			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	aCi36/EoPkC3KjBs7u1UzA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 18:56		
+%R	83250	101723	4514	Y	1579		6907		4	7	7	0.125	0	0.125	0	0	0		104.1667	729.1667	0.0000	0.0000	729.1667			2025-11-20 09:00	2025-11-27 18:00	2025-11-20 09:00	2025-11-27 18:00			Y				N	0lEPNGceK06Xa9GJCe2nZg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:07		
+%R	83251	101723	4514	Y	1571		6939		3	7	7	0.125	0	0.125	0	0	0		1300.0000	9100.0000	0.0000	0.0000	9100.0000			2025-11-20 09:00	2025-11-27 18:00	2025-11-20 09:00	2025-11-27 18:00			Y				N	CFIMoyaMX0CR37pnWvHoWw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:07		
+%R	83252	101723	4514	Y	1575		6940		3	7	7	0.125	0	0.125	0	0	0		1500.0000	10500.0000	0.0000	0.0000	10500.0000			2025-11-20 09:00	2025-11-27 18:00	2025-11-20 09:00	2025-11-27 18:00			Y				N	a4ORJC2tDkmYWiZ+vGbKqw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:08		
+%R	83253	101723	4514	Y	1570		6938		3	7	7	0.125	0	0.125	0	0	0		2000.0000	14000.0000	0.0000	0.0000	14000.0000			2025-11-20 09:00	2025-11-27 18:00	2025-11-20 09:00	2025-11-27 18:00			Y				N	NoCrgxNiiEy+4tW0tgsJSg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:08		
+%R	83254	101724	4514	Y	1573		6927		2	5	5	0.125	0	0.125	0	0	0		114.5833	572.9167	0.0000	0.0000	572.9167			2025-11-20 09:00	2025-11-25 18:00	2025-11-20 09:00	2025-11-25 18:00			Y				N	6hJPXnacTE2VFtxW8SaXSA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:13		
+%R	83255	101724	4514	Y	1571		6939		3	5	5	0.125	0	0.125	0	0	0		1300.0000	6500.0000	0.0000	0.0000	6500.0000			2025-11-20 09:00	2025-11-25 18:00	2025-11-20 09:00	2025-11-25 18:00			Y				N	8hvEnt1E5U+nT5XxSYV5EA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:13		
+%R	83256	101725	4514	Y	1595		6912		3	5	5	0.125	0	0.125	0	0	0		62.5000	312.5000	0.0000	0.0000	312.5000			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	Cv0n2AeookCtP4WDEHuU6A	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:14		
+%R	83257	101725	4514	Y			6914			5	5	0.125	0	0.125	0	0	0		1200.0000	6000.0000	0.0000	0.0000	6000.0000			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	V41R400rOEGc8kTcnmtIXw	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 19:14		
+%R	83258	101725	4514	Y	1603		6954		3	5	5	0.125	0	0.125	0	0	0		300.0000	1500.0000	0.0000	0.0000	1500.0000			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	08pOFNk530S9O27ox6LEWg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:15		
+%R	83260	101725	4514	Y	1576		6941		3	5	5	0.125	0	0.125	0	0	0		900.0000	4500.0000	0.0000	0.0000	4500.0000			2025-11-12 09:00	2025-11-17 18:00	2025-11-12 09:00	2025-11-17 18:00			Y				N	mnK1B0UjsEmNrHX8dWR5og	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 19:15		
+%R	83261	101726	4514	Y	1595		6912		3	5	5	0.125	0	0.125	0	0	0		62.5000	312.5000	0.0000	0.0000	312.5000			2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00			Y				N	OfKcY7AEQEeh9yPyEJJHiA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 20:24		
+%R	83262	101726	4514	Y			6914			5	5	0.125	0	0.125	0	0	0		1200.0000	6000.0000	0.0000	0.0000	6000.0000			2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00			Y				N	JWzX40TThUS2FZkQVYQwbA	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 20:24		
+%R	83263	101726	4514	Y	1603		6954		3	5	5	0.125	0	0.125	0	0	0		300.0000	1500.0000	0.0000	0.0000	1500.0000			2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00			Y				N	kBRJbRoqDkKF4o0FpuxcBw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:37		
+%R	83265	101726	4514	Y	1579		6907		4	1.5	1.5	0.0375	0	0.0375	0	0	0		104.1667	156.2500	0.0000	0.0000	156.2500			2025-11-18 09:00	2025-11-22 18:00	2025-11-18 09:00	2025-11-22 18:00			Y				N	icCsZzdgTkao3Wtd3MdwfQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:38		
+%R	83266	101727	4514	Y	1597		6911		3	8	8	0.125	0	0.125	0	0	0		150.0000	1200.0000	0.0000	0.0000	1200.0000			2025-11-12 09:00	2025-11-20 18:00	2025-11-12 09:00	2025-11-20 18:00			Y				N	XUHFfeu3eE2pJFq9+ZGT6Q	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:39		
+%R	83267	101727	4514	Y	1586		6948		3	4	4	0.0625	0	0.0625	0	0	0		850.0000	3400.0000	0.0000	0.0000	3400.0000			2025-11-12 09:00	2025-11-20 18:00	2025-11-12 09:00	2025-11-20 18:00			Y				N	78NZcA6l4EuEbQ4TlyC1tQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:39		
+%R	83268	101727	4514	Y	1595		6912		3	8	8	0.125	0	0.125	0	0	0		62.5000	500.0000	0.0000	0.0000	500.0000			2025-11-12 09:00	2025-11-20 18:00	2025-11-12 09:00	2025-11-20 18:00			Y				N	HbgDLqhwM0CwvtehQpB+eQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:40		
+%R	83269	101728	4514	Y	1595		6912		3	4	4	0.125	0	0.125	0	0	0		62.5000	250.0000	0.0000	0.0000	250.0000			2025-11-15 09:00	2025-11-19 18:00	2025-11-15 09:00	2025-11-19 18:00			Y				N	HdOTzVBHTkSM0jSRT0Uh8w	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:40		
+%R	83270	101728	4514	Y	1574		6928		3	1.2	1.2	0.0375	0	0.0375	0	0	0		62.5000	75.0000	0.0000	0.0000	75.0000			2025-11-15 09:00	2025-11-19 18:00	2025-11-15 09:00	2025-11-19 18:00			Y				N	U6cH/lz8RUaECLyABqzm9w	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:40		
+%R	83271	101729	4514	Y	1604		6955		3	4	4	0.125	0	0.125	0	0	0		350.0000	1400.0000	0.0000	0.0000	1400.0000			2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00			Y				N	HB0fqttXtUyyAI3DfGXFZQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:41		
+%R	83272	101729	4514	Y			6936			32	32	1	0	1	0	0	0		2000.0000	64000.0000	0.0000	0.0000	64000.0000			2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00			Y				N	SJFm/csSWk2tgOf2iwgjsA	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 23:41		
+%R	83273	101729	4514	Y	1595		6912		3	4	4	0.125	0	0.125	0	0	0		62.5000	250.0000	0.0000	0.0000	250.0000			2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00			Y				N	Sh/nwbT3K0+PYcxPa/jMuQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:41		
+%R	83274	101729	4514	Y	1579		6907		4	1.2	1.2	0.0375	0	0.0375	0	0	0		104.1667	125.0000	0.0000	0.0000	125.0000			2025-11-24 09:00	2025-11-27 18:00	2025-11-24 09:00	2025-11-27 18:00			Y				N	Gsy6NgVbIE20rjtxKL4Ocw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:42		
+%R	83275	101730	4514	Y	1594		6910		3	2	2	0.125	0	0.125	0	0	0		187.5000	375.0000	0.0000	0.0000	375.0000			2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00			Y				N	qahhAElFqkmdYfdQnecqbQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:42		
+%R	83276	101730	4514	Y			6917			2	2	0.125	0	0.125	0	0	0		700.0000	1400.0000	0.0000	0.0000	1400.0000			2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00			Y				N	ca1Cku5g6k+Nv4PbtL29Fg	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 23:42		
+%R	83277	101730	4514	Y			6916			2	2	0.125	0	0.125	0	0	0		900.0000	1800.0000	0.0000	0.0000	1800.0000			2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00			Y				N	380tKDTgy0Ox1Dw+GNm6yA	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 23:42		
+%R	83278	101730	4514	Y	1607		6958		3	2	2	0.125	0	0.125	0	0	0		250.0000	500.0000	0.0000	0.0000	500.0000			2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00			Y				N	YEvobqTsGEOQftrjr00gjQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:43		
+%R	83279	101730	4514	Y	1605		6956		3	2	2	0.125	0	0.125	0	0	0		250.0000	500.0000	0.0000	0.0000	500.0000			2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00			Y				N	wNJWF0YBU06rGLYjGOYmlQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:43		
+%R	83280	101730	4514	Y	1589		6905		2	1	1	0.0625	0	0.0625	0	0	0		67.7083	67.7083	0.0000	0.0000	67.7083			2025-11-28 09:00	2025-11-29 18:00	2025-11-28 09:00	2025-11-29 18:00			Y				N	XNfnmQCFEUGRQ7T13ztt0w	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:43		
+%R	83281	101731	4514	Y	1596		6913		3	4	4	0.125	0	0.125	0	0	0		100.0000	400.0000	0.0000	0.0000	400.0000			2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00			Y				N	PfNnhToO70uq5zkVQHgLlw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:47		
+%R	83282	101731	4514	Y			6929			4	4	0.125	0	0.125	0	0	0		175.0000	700.0000	0.0000	0.0000	700.0000			2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00			Y				N	lLN0AfnGV0WfSehNWH9zAg	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 23:47		
+%R	83283	101731	4514	Y			6917			4	4	0.125	0	0.125	0	0	0		700.0000	2800.0000	0.0000	0.0000	2800.0000			2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00			Y				N	DORYPbhdK0GLLryb3mLonw	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 23:47		
+%R	83284	101731	4514	Y	1607		6958		3	4	4	0.125	0	0.125	0	0	0		250.0000	1000.0000	0.0000	0.0000	1000.0000			2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00			Y				N	cHSWjVbfhEKNOmc/zU9TyQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:48		
+%R	83285	101731	4514	Y	1587		6904		3	2	2	0.0625	0	0.0625	0	0	0		78.1250	156.2500	0.0000	0.0000	156.2500			2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00			Y				N	9c1QMMRoVEqPl2OpdzZ9fA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:48		
+%R	83286	101731	4514	Y	1589		6905		2	2	2	0.0625	0	0.0625	0	0	0		67.7083	135.4167	0.0000	0.0000	135.4167			2025-12-01 09:00	2025-12-04 18:00	2025-12-01 09:00	2025-12-04 18:00			Y				N	VwevfIyr+EGh5bRGzBYQiw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:48		
+%R	83287	101732	4514	Y	1595		6912		3	3.5	3.5	0.0625	0	0.0625	0	0	0		62.5000	218.7500	0.0000	0.0000	218.7500			2025-12-01 09:00	2025-12-08 18:00	2025-12-01 09:00	2025-12-08 18:00			Y				N	CyjhvOg1bkGmnvHIb/XtMg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:50		
+%R	83288	101732	4514	Y	1579		6906		3	1.4	1.4	0.025	0	0.025	0	0	0		130.2083	182.2917	0.0000	0.0000	182.2917			2025-12-01 09:00	2025-12-08 18:00	2025-12-01 09:00	2025-12-08 18:00			Y				N	AXQGgBt1MkaZDAuXuo9f5Q	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:51		
+%R	83289	101733	4514	Y	1596		6913		3	4	4	0.125	0	0.125	0	0	0		100.0000	400.0000	0.0000	0.0000	400.0000			2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00			Y				N	tNuYN6yek022Z3aqZKWvsA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:52		
+%R	83290	101733	4514	Y	1597		6911		3	4	4	0.125	0	0.125	0	0	0		150.0000	600.0000	0.0000	0.0000	600.0000			2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00			Y				N	1pjPw6YEDUOs1Hx5E/Tgsg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:52		
+%R	83291	101733	4514	Y			6917			4	4	0.125	0	0.125	0	0	0		700.0000	2800.0000	0.0000	0.0000	2800.0000			2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00			Y				N	I76cUVuNiEa9RjUnOeu3cg	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-20 23:52		
+%R	83292	101733	4514	Y	1607		6958		3	4	4	0.125	0	0.125	0	0	0		250.0000	1000.0000	0.0000	0.0000	1000.0000			2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00			Y				N	fMkDlNnbVkivfHghz0xPYA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:52		
+%R	83293	101733	4514	Y	1589		6905		2	2	2	0.0625	0	0.0625	0	0	0		67.7083	135.4167	0.0000	0.0000	135.4167			2025-12-08 09:00	2025-12-11 18:00	2025-12-08 09:00	2025-12-11 18:00			Y				N	znJJG3Pndk6CI/M3R0C01Q	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-20 23:52		
+%R	83294	101734	4514	Y			6918			3	3	0.125	0	0.125	0	0	0		500.0000	1500.0000	0.0000	0.0000	1500.0000			2025-12-12 09:00	2025-12-15 18:00	2025-12-12 09:00	2025-12-15 18:00			Y				N	Ecq/gT7ayEC8uwJHdBzGVA	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 00:06		
+%R	83295	101734	4514	Y	1595		6912		3	3	3	0.125	0	0.125	0	0	0		62.5000	187.5000	0.0000	0.0000	187.5000			2025-12-12 09:00	2025-12-15 18:00	2025-12-12 09:00	2025-12-15 18:00			Y				N	Eq16Fuk3RE+rMamT2BQWDw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:06		
+%R	83296	101734	4514	Y	1606		6957		3	3	3	0.125	0	0.125	0	0	0		200.0000	600.0000	0.0000	0.0000	600.0000			2025-12-12 09:00	2025-12-15 18:00	2025-12-12 09:00	2025-12-15 18:00			Y				N	zA9Gqx59sUieR9JMAyTaew	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:06		
+%R	83297	101735	4514	Y	1575		6940		3	0.4	0.4	0.025	0	0.025	0	0	0		1500.0000	600.0000	0.0000	0.0000	600.0000			2025-12-16 09:00	2025-12-17 18:00	2025-12-16 09:00	2025-12-17 18:00			Y				N	NnM3n73rO0ik8k5ulT6fSw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:07		
+%R	83298	101735	4514	Y	1594		6910		3	2	2	0.125	0	0.125	0	0	0		187.5000	375.0000	0.0000	0.0000	375.0000			2025-12-16 09:00	2025-12-17 18:00	2025-12-16 09:00	2025-12-17 18:00			Y				N	3jgbJeKPPEKauKGSz6v8nw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:07		
+%R	83299	101736	4514	Y	1596		6913		3	5	5	0.125	0	0.125	0	0	0		100.0000	500.0000	0.0000	0.0000	500.0000			2025-12-18 09:00	2025-12-23 18:00	2025-12-18 09:00	2025-12-23 18:00			Y				N	Rr4aTSZ/JEeaTVhqUcwdQg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:07		
+%R	83300	101736	4514	Y			6929			5	5	0.125	0	0.125	0	0	0		175.0000	875.0000	0.0000	0.0000	875.0000			2025-12-18 09:00	2025-12-23 18:00	2025-12-18 09:00	2025-12-23 18:00			Y				N	A9K9MYyl8E+k3ORBdFc83A	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 00:07		
+%R	83301	101736	4514	Y	1587		6904		3	2.5	2.5	0.0625	0	0.0625	0	0	0		78.1250	195.3125	0.0000	0.0000	195.3125			2025-12-18 09:00	2025-12-23 18:00	2025-12-18 09:00	2025-12-23 18:00			Y				N	f7IIu4rFrEq3e8OzdpF5Gg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:07		
+%R	83302	101737	4514	Y	1597		6911		3	5	5	0.125	0	0.125	0	0	0		150.0000	750.0000	0.0000	0.0000	750.0000			2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00			Y				N	qXelFKTsyEaPEveJBqo6mw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:09		
+%R	83303	101737	4514	Y			6917			40	40	1	0	1	0	0	0		700.0000	28000.0000	0.0000	0.0000	28000.0000			2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00			Y				N	z/o9MPOd+E+ucBzfwyj7cg	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 00:09		
+%R	83304	101737	4514	Y			6931			5	5	0.125	0	0.125	0	0	0		2750.0000	13750.0000	0.0000	0.0000	13750.0000			2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00			Y				N	7g1pugQZKEWWTj6TLGXQvg	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 00:09		
+%R	83305	101737	4514	Y	1607		6958		3	5	5	0.125	0	0.125	0	0	0		250.0000	1250.0000	0.0000	0.0000	1250.0000			2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00			Y				N	oxAMOx3f7U+/Hb37IjCnYg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:09		
+%R	83306	101737	4514	Y	1608		6959		3	5	5	0.125	0	0.125	0	0	0		300.0000	1500.0000	0.0000	0.0000	1500.0000			2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00			Y				N	k3v8gyCwk0KTDJvT80gkGQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:09		
+%R	83307	101737	4514	Y	1589		6905		2	2.5	2.5	0.0625	0	0.0625	0	0	0		67.7083	169.2708	0.0000	0.0000	169.2708			2025-12-24 09:00	2025-12-30 18:00	2025-12-24 09:00	2025-12-30 18:00			Y				N	fvWEd64fQUKKZmF4QSBWSQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:09		
+%R	83308	101738	4514	Y	1594		6910		3	4	4	0.125	0	0.125	0	0	0		187.5000	750.0000	0.0000	0.0000	750.0000			2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00			Y				N	scjI7u77rkGk8975TjoYIA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:10		
+%R	83309	101738	4514	Y			6917			4	4	0.125	0	0.125	0	0	0		700.0000	2800.0000	0.0000	0.0000	2800.0000			2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00			Y				N	tDodH5L2jkObZ4bfqe0lwg	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 00:10		
+%R	83310	101738	4514	Y			6916			4	4	0.125	0	0.125	0	0	0		900.0000	3600.0000	0.0000	0.0000	3600.0000			2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00			Y				N	CzItnDGNL0KWZUOzv98yPQ	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 00:10		
+%R	83311	101738	4514	Y	1605		6956		3	4	4	0.125	0	0.125	0	0	0		250.0000	1000.0000	0.0000	0.0000	1000.0000			2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00			Y				N	UcLkVrbldUGu3sBGpI3Lmg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:11		
+%R	83312	101738	4514	Y	1607		6958		3	4	4	0.125	0	0.125	0	0	0		250.0000	1000.0000	0.0000	0.0000	1000.0000			2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00			Y				N	pdjR+6bGokeRxoQcMaHJOA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:11		
+%R	83313	101738	4514	Y	1575		6940		3	1.2	1.2	0.0375	0	0.0375	0	0	0		1500.0000	1800.0000	0.0000	0.0000	1800.0000			2025-12-31 09:00	2026-01-03 18:00	2025-12-31 09:00	2026-01-03 18:00			Y				N	Hv09VUvNd0qQBP4PQjo1Sg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:11		
+%R	83314	101739	4514	Y	1594		6910		3	5	5	0.125	0	0.125	0	0	0		187.5000	937.5000	0.0000	0.0000	937.5000			2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00			Y				N	3J41slc8kU2/Bm/3tEy3QA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:11		
+%R	83315	101739	4514	Y	1588		6902		3	2.5	2.5	0.0625	0	0.0625	0	0	0		93.7500	234.3750	0.0000	0.0000	234.3750			2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00			Y				N	exKcL0HTnEu+0gxZy8I2IQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:11		
+%R	83316	101740	4514	Y	1597		6911		3	1.5	1.5	0.0625	0	0.0625	0	0	0		150.0000	225.0000	0.0000	0.0000	225.0000			2026-01-14 09:00	2026-01-16 18:00	2026-01-14 09:00	2026-01-16 18:00			Y				N	MO9Oa2DRCUScbMM3KFKYQA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:12		
+%R	83317	101740	4514	Y	1594		6910		3	3	3	0.125	0	0.125	0	0	0		187.5000	562.5000	0.0000	0.0000	562.5000			2026-01-14 09:00	2026-01-16 18:00	2026-01-14 09:00	2026-01-16 18:00			Y				N	S5y4AySwOkCY3MWFueAa9A	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:12		
+%R	83318	101741	4514	Y	1597		6911		3	3	3	0.125	0	0.125	0	0	0		150.0000	450.0000	0.0000	0.0000	450.0000			2026-01-24 09:00	2026-01-28 18:00	2026-01-24 09:00	2026-01-28 18:00			Y				N	VHjn6zomikqmgaM4YDn0MQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:12		
+%R	83319	101741	4514	Y	1581		6944		3	0.9	0.9	0.0375	0	0.0375	0	0	0		1200.0000	1080.0000	0.0000	0.0000	1080.0000			2026-01-24 09:00	2026-01-28 18:00	2026-01-24 09:00	2026-01-28 18:00			Y				N	vW5YlHFTB0Cae2oEcIMHqQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:12		
+%R	83320	101742	4514	Y	1598		6925		3	6	6	0.125	0	0.125	0	0	0		162.5000	975.0000	0.0000	0.0000	975.0000			2026-01-08 09:00	2026-01-14 18:00	2026-01-08 09:00	2026-01-14 18:00			Y				N	1HXhB00Ak0OrLuaYJokHOw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:13		
+%R	83321	101742	4514	Y	1591		6950		3	3	3	0.0625	0	0.0625	0	0	0		800.0000	2400.0000	0.0000	0.0000	2400.0000			2026-01-08 09:00	2026-01-14 18:00	2026-01-08 09:00	2026-01-14 18:00			Y				N	bGxEy2oxf0ui4uWpomOE9Q	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:13		
+%R	83322	101743	4514	Y	1599		6926		3	5	5	0.125	0	0.125	0	0	0		162.5000	812.5000	0.0000	0.0000	812.5000			2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00			Y				N	/qCydj3iuUGODnkAm4lIOg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:13		
+%R	83323	101743	4514	Y	1592		6951		3	2.5	2.5	0.0625	0	0.0625	0	0	0		750.0000	1875.0000	0.0000	0.0000	1875.0000			2026-01-08 09:00	2026-01-13 18:00	2026-01-08 09:00	2026-01-13 18:00			Y				N	6PX1BKUnokyv3E1UmMadxA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:13		
+%R	83324	101744	4514	Y	1599		6926		3	4	4	0.125	0	0.125	0	0	0		162.5000	650.0000	0.0000	0.0000	650.0000			2026-01-08 09:00	2026-01-12 18:00	2026-01-08 09:00	2026-01-12 18:00			Y				N	6BifQwxzA0mfAc+10AgfKQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:14		
+%R	83325	101744	4514	Y	1584		6947		3	2	2	0.0625	0	0.0625	0	0	0		1300.0000	2600.0000	0.0000	0.0000	2600.0000			2026-01-08 09:00	2026-01-12 18:00	2026-01-08 09:00	2026-01-12 18:00			Y				N	tO6IauB0vU+Xj3ONbFnlWA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:14		
+%R	83326	101744	4514	Y	1595		6912		3	2	2	0.0625	0	0.0625	0	0	0		62.5000	125.0000	0.0000	0.0000	125.0000			2026-01-08 09:00	2026-01-12 18:00	2026-01-08 09:00	2026-01-12 18:00			Y				N	Vj/LrrUnQEK2f1GDDfDU5A	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:14		
+%R	83327	101745	4514	Y	1594		6910		3	5	5	0.125	0	0.125	0	0	0		187.5000	937.5000	0.0000	0.0000	937.5000			2026-01-20 09:00	2026-01-24 18:00	2026-01-20 09:00	2026-01-24 18:00			Y				N	53gtFG6ndEirKvV/+wWZiA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:15		
+%R	83328	101745	4514	Y	1590		6949		3	2.5	2.5	0.0625	0	0.0625	0	0	0		850.0000	2125.0000	0.0000	0.0000	2125.0000			2026-01-20 09:00	2026-01-24 18:00	2026-01-20 09:00	2026-01-24 18:00			Y				N	58ueyObwSUedkz7YTdDaNQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:15		
+%R	83329	101746	4514	Y	1597		6911		3	5	5	0.125	0	0.125	0	0	0		150.0000	750.0000	0.0000	0.0000	750.0000			2026-01-30 09:00	2026-02-04 18:00	2026-01-30 09:00	2026-02-04 18:00			Y				N	eSPuhnNMqEKz7avNYDxMWQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:15		
+%R	83330	101746	4514	Y	1601		6953		3	5	5	0.125	0	0.125	0	0	0		600.0000	3000.0000	0.0000	0.0000	3000.0000			2026-01-30 09:00	2026-02-04 18:00	2026-01-30 09:00	2026-02-04 18:00			Y				N	FoZcFg2+FkyDGIOv10maZA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:15		
+%R	83331	101746	4514	Y	1581		6944		3	1.5	1.5	0.0375	0	0.0375	0	0	0		1200.0000	1800.0000	0.0000	0.0000	1800.0000			2026-01-30 09:00	2026-02-04 18:00	2026-01-30 09:00	2026-02-04 18:00			Y				N	AwsD6ZEhOkm9gNqHr+DwcQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:16		
+%R	83334	101747	4514	Y	1600		6952		3	4	4	0.125	0	0.125	0	0	0		550.0000	2200.0000	0.0000	0.0000	2200.0000			2026-02-09 09:00	2026-02-13 13:00	2026-02-09 09:00	2026-02-13 13:00			Y				N	mPpEXc6/yEOb/m63EuLk/g	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:17		
+%R	83335	101747	4514	Y	1590		6949		3	1.2	1.2	0.0375	0	0.0375	0	0	0		850.0000	1020.0000	0.0000	0.0000	1020.0000			2026-02-09 09:00	2026-02-13 13:00	2026-02-09 09:00	2026-02-13 13:00			Y				N	0l40qTnrj0OehSC+y9ZJDA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:17		
+%R	83337	101748	4514	Y	1583		6946		3	3	3	0.125	0	0.125	0	0	0		1300.0000	3900.0000	0.0000	0.0000	3900.0000			2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00			Y				N	Cgzgoc67ik6Y+QQZz326XQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:39		
+%R	83338	101749	4514	Y	1584		6947		3	3	3	0.125	0	0.125	0	0	0		1300.0000	3900.0000	0.0000	0.0000	3900.0000			2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00			Y				N	bBOqiCIjBEGRHA2QhLGrvw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:40		
+%R	83339	101753	4514	Y	1574		6928		3	85	85	0.125	0	0.125	0	0	0		62.5000	5312.5000	0.0000	0.0000	5312.5000			2025-11-12 09:00	2026-02-21 13:00	2025-11-12 09:00	2026-02-21 13:00			Y				N	/hkPuQz73EW443reeNZDNQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:41		
+%R	83340	101754	4514	Y	1575		6940		3	40	40	0.0625	0	0.0625	0	0	0		1500.0000	60000.0000	0.0000	0.0000	60000.0000			2025-11-18 09:00	2026-02-21 13:00	2025-11-18 09:00	2026-02-21 13:00			Y				N	XRbMk6lRyE222pagXFYLQw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:41		
+%R	83341	101754	4514	Y	1614		6963		3	40	40	0.0625	0	0.0625	0	0	0		450.0000	18000.0000	0.0000	0.0000	18000.0000			2025-11-18 09:00	2026-02-21 13:00	2025-11-18 09:00	2026-02-21 13:00			Y				N	KY3e7oSdfEiiy3adrA7ITw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:41		
+%R	83342	101755	4514	Y	1610		6960		3	61	61	0.125	0	0.125	0	0	0		200.0000	12200.0000	0.0000	0.0000	12200.0000			2025-12-01 09:00	2026-02-11 18:00	2025-12-01 09:00	2026-02-11 18:00			Y				N	4c36dmtMpk6xkQrq39NgWw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:42		
+%R	83343	101755	4514	Y	1575		6940		3	30.5	30.5	0.0625	0	0.0625	0	0	0		1500.0000	45750.0000	0.0000	0.0000	45750.0000			2025-12-01 09:00	2026-02-11 18:00	2025-12-01 09:00	2026-02-11 18:00			Y				N	DoWWa97hNkqmUMENCnqg0g	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:42		
+%R	83344	101756	4514	Y	1583		6946		3	1.5	1.5	0.0625	0	0.0625	0	0	0		1300.0000	1950.0000	0.0000	0.0000	1950.0000			2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00			Y				N	QT1ozl/zmkeCMuXuMn4fag	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:42		
+%R	83345	101756	4514	Y	1584		6947		3	1.5	1.5	0.0625	0	0.0625	0	0	0		1300.0000	1950.0000	0.0000	0.0000	1950.0000			2026-02-09 09:00	2026-02-11 18:00	2026-02-09 09:00	2026-02-11 18:00			Y				N	/Vgpi5aumUyq18lf9yEYIg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:42		
+%R	83346	101757	4514	Y	1590		6949		3	1.5	1.5	0.0625	0	0.0625	0	0	0		850.0000	1275.0000	0.0000	0.0000	1275.0000			2026-02-12 09:00	2026-02-16 13:00	2026-02-12 09:00	2026-02-16 13:00			Y				N	lPyH9xoVh0q+k2QfBiLPcA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:43		
+%R	83347	101757	4514	Y	1594		6910		3	1.5	1.5	0.0625	0	0.0625	0	0	0		187.5000	281.2500	0.0000	0.0000	281.2500			2026-02-12 09:00	2026-02-16 13:00	2026-02-12 09:00	2026-02-16 13:00			Y				N	uQDG2DSjYEKId/F0ZK3tig	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:43		
+%R	83348	101758	4514	Y	1613		6962		3	5	5	0.125	0	0.125	0	0	0		350.0000	1750.0000	0.0000	0.0000	1750.0000			2026-02-16 14:00	2026-02-21 13:00	2026-02-16 14:00	2026-02-21 13:00			Y				N	nSEwaS1PxkW1esfZjrLlCg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:43		
+%R	83349	101759	4514	Y	1570		6938		2	2.5	2.5	0.0625	0	0.0625	0	0	0		2000.0000	5000.0000	0.0000	0.0000	5000.0000			2026-02-21 14:00	2026-02-27 13:00	2026-02-21 14:00	2026-02-27 13:00			Y				N	F6uiewLw20G8ze9LuzK/wQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:45		
+%R	83350	101759	4514	Y	1576		6941		3	2.5	2.5	0.0625	0	0.0625	0	0	0		900.0000	2250.0000	0.0000	0.0000	2250.0000			2026-02-21 14:00	2026-02-27 13:00	2026-02-21 14:00	2026-02-27 13:00			Y				N	NWf/ZeBNwEmEW73fE4s/nw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 00:45		
+%R	83351	101750	4514	Y	1594		6910		3	5	5	0.125	0	0.125	0	0	0		187.5000	937.5000	0.0000	0.0000	937.5000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	7kh+U0zzIkqcD7Cm5m093Q	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83352	101750	4514	Y	1595		6912		3	5	5	0.125	0	0.125	0	0	0		62.5000	312.5000	0.0000	0.0000	312.5000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	aRuOfi9zG0WL9mEXHpyBwA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83353	101750	4514	Y	1607		6958		3	5	5	0.125	0	0.125	0	0	0		250.0000	1250.0000	0.0000	0.0000	1250.0000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	mbuKv0bdHkCCyaJlgGCfPw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83354	101750	4514	Y			6917			5	5	0.125	0	0.125	0	0	0		700.0000	3500.0000	0.0000	0.0000	3500.0000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	HDaA50Y/P0WmkeQ9tp4MoA	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 10:35		
+%R	83355	101750	4514	Y			6918			5	5	0.125	0	0.125	0	0	0		500.0000	2500.0000	0.0000	0.0000	2500.0000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	EzuTUIxmwEe+QKiT6rhvYQ	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 10:35		
+%R	83356	101750	4514	Y	1606		6957		3	5	5	0.125	0	0.125	0	0	0		200.0000	1000.0000	0.0000	0.0000	1000.0000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	QIghxpxCHEiClhx0ng2dGw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83357	101750	4514	Y	1574		6928		3	1	1	0.025	0	0.025	0	0	0		62.5000	62.5000	0.0000	0.0000	62.5000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	bmf7Qxo6zU23AJyhvs22ow	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:36		
+%R	83358	101750	4514	Y	1590		6949		3	2.5	2.5	0.0625	0	0.0625	0	0	0		850.0000	2125.0000	0.0000	0.0000	2125.0000			2026-01-17 09:00	2026-01-22 18:00	2026-01-17 09:00	2026-01-22 18:00			Y				N	4BIKLEAVfE2ZY4DGaPWhAg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:36		
+%R	83359	101751	4514	Y	1594		6910		3	4	4	0.125	0	0.125	0	0	0		187.5000	750.0000	0.0000	0.0000	750.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	th57fAG0ZESQ6ce6+Ha7pw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83360	101751	4514	Y	1595		6912		3	4	4	0.125	0	0.125	0	0	0		62.5000	250.0000	0.0000	0.0000	250.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	O2a2bqlSl0CmVIgEguY6UA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83361	101751	4514	Y			6917			4	4	0.125	0	0.125	0	0	0		700.0000	2800.0000	0.0000	0.0000	2800.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	3Fpu59GohkGF+/8zQdanyQ	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 10:37		
+%R	83362	101751	4514	Y	1607		6958		3	4	4	0.125	0	0.125	0	0	0		250.0000	1000.0000	0.0000	0.0000	1000.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	JXedpROCo0OJ89RcS4RAZw	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc				
+%R	83363	101751	4514	Y	1588		6902		3	2	2	0.0625	0	0.0625	0	0	0		93.7500	187.5000	0.0000	0.0000	187.5000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	bnq3FrspUkukijaIKuLOSQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:38		
+%R	83364	101751	4514	Y	1579		6906		3	1.2	1.2	0.0375	0	0.0375	0	0	0		130.2083	156.2500	0.0000	0.0000	156.2500			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	3wUApWexnkWEoA1gjPC+lQ	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:38		
+%R	83365	101752	4514	Y	1579		6906		3	1.2	1.2	0.0375	0	0.0375	0	0	0		130.2083	156.2500	0.0000	0.0000	156.2500			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	W6z2qaFYOE+SvRl3JjfMUA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:39		
+%R	83366	101752	4514	Y	1595		6912		3	4	4	0.125	0	0.125	0	0	0		62.5000	250.0000	0.0000	0.0000	250.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	uQWFMtEYq0epV+g4kCCMeg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:39		
+%R	83367	101752	4514	Y	1581		6944		3	2	2	0.0625	0	0.0625	0	0	0		1200.0000	2400.0000	0.0000	0.0000	2400.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	FGjxKOFO40mk4vaK5fEHRA	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:39		
+%R	83368	101752	4514	Y			6918			4	4	0.125	0	0.125	0	0	0		500.0000	2000.0000	0.0000	0.0000	2000.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	Q3SMYtJSkkuA25Xa//qBbQ	COST_PER_QTY	0.0000	0		RT_Equip	ST_Rsrc	NotPrmUser	2025-12-21 10:39		
+%R	83369	101752	4514	Y	1606		6957		3	4	4	0.125	0	0.125	0	0	0		200.0000	800.0000	0.0000	0.0000	800.0000			2026-01-23 09:00	2026-01-28 18:00	2026-01-23 09:00	2026-01-28 18:00			Y				N	E7yqaIWgWE+Pz3b2bcX6rg	COST_PER_QTY	0.0000	0		RT_Labor	ST_Rsrc	NotPrmUser	2025-12-21 10:39		
+%E
