@@ -1,4 +1,4 @@
-** Primavera P6 Planning Project-> Residential Building.
+## Primavera P6 Planning Project-> Residential Building.
 
 This repository contains a simulated planning and scheduling project created for learning purposes using industry-standard assumptions.
  
@@ -8,5 +8,5 @@ This repository contains a simulated planning and scheduling project created for
 - Critical Path Method (CPM) analysis
 - Resource-loaded schedule
   
-** Software Used:
+## Software Used:
 - Oracle Primavera P6 Professional
