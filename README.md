@@ -6,7 +6,7 @@ This repository contains a simulated planning and scheduling project created for
 - Work Breakdown Structure (WBS) aligned with construction phases
 - Logical activity sequencing with FS, SS, leads and lags
 - Critical Path Method (CPM) analysis
-- Resource-loaded schedule
+- Resource-loaded schedule and Gnatt chart
   
 ## Software Used:
 - Oracle Primavera P6 Professional
